@@ -24,7 +24,7 @@
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
 .hidden{display:none!important;}
 body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:var(--t1);min-height:100vh;overflow-x:hidden;padding-top:var(--st);padding-bottom:calc(80px + var(--sb));}
-
+ 
 /* ── SETUP ── */
 #setup{position:fixed;inset:0;background:var(--bg);z-index:1000;display:flex;flex-direction:column;align-items:center;padding:40px 20px 60px;overflow-y:auto;}
 .setup-logo{font-family:'Space Mono',monospace;font-size:28px;color:var(--accent);margin-bottom:6px;}
@@ -40,13 +40,13 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
 .inp{width:100%;background:var(--input);border:1.5px solid var(--border);border-radius:var(--rs);padding:13px 16px;color:var(--t1);font-family:'DM Sans',sans-serif;font-size:15px;outline:none;transition:border-color .2s;-webkit-appearance:none;margin-bottom:12px;}
 .inp:focus{border-color:var(--accent);}
 .inp-mono{font-family:'Space Mono',monospace;font-size:13px;}
-
+ 
 /* ── LOADING ── */
 #loading{position:fixed;inset:0;background:var(--bg);z-index:900;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;}
 .spin{width:40px;height:40px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;}
 @keyframes spin{to{transform:rotate(360deg)}}
 #loading p{font-size:14px;color:var(--t3);}
-
+ 
 /* ── HEADER ── */
 .hdr{position:sticky;top:0;z-index:100;background:linear-gradient(to bottom,var(--bg) 60%,transparent);padding:14px 20px 20px;display:flex;align-items:flex-start;justify-content:space-between;}
 .hdr h1{font-family:'Space Mono',monospace;font-size:21px;font-weight:700;color:var(--accent);}
@@ -59,22 +59,22 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
 .dot.busy{background:var(--accent);animation:pulse 1s infinite;}
 .dot.err{background:var(--err);}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
-
+ 
 /* ── TABS ── */
 .tabs{position:fixed;bottom:0;left:0;right:0;background:var(--bg2);border-top:1px solid var(--border);display:flex;padding-bottom:var(--sb);z-index:200;}
 .tabs button{flex:1;background:none;border:none;color:var(--t3);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;padding:10px 4px 8px;display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;transition:color .2s;position:relative;}
 .tabs button.on{color:var(--accent);}
 .tabs button.on::before{content:'';position:absolute;top:0;left:25%;right:25%;height:2.5px;background:var(--accent);border-radius:0 0 4px 4px;}
 .tabs svg{width:24px;height:24px;}
-
+ 
 /* ── PAGES ── */
 .page{display:none;padding:0 20px 30px;animation:up .3s ease;}
 .page.on{display:block;}
 @keyframes up{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
-
+ 
 /* ── CARD ── */
 .card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:18px;margin-bottom:14px;box-shadow:var(--sh);}
-
+ 
 /* ── FORMS ── */
 .fg{margin-bottom:18px;}
 .fg label{display:block;font-size:12px;font-weight:600;color:var(--t2);margin-bottom:7px;text-transform:uppercase;letter-spacing:.6px;}
@@ -82,7 +82,7 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
 .fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--accent);}
 .fg select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2394a3b8' viewBox='0 0 16 16'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:40px;}
 .fg textarea{min-height:80px;resize:vertical;}
-
+ 
 /* ── PHOTO ── */
 .photo-wrap{position:relative;width:100%;aspect-ratio:4/3;background:var(--input);border:2px dashed var(--border);border-radius:var(--r);display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;overflow:hidden;transition:border-color .2s;}
 .photo-wrap:active{border-color:var(--accent);}
@@ -91,7 +91,7 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
 .photo-wrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
 .photo-wrap input{display:none;}
 .rm-photo{position:absolute;top:10px;right:10px;width:30px;height:30px;background:rgba(0,0,0,.75);border:none;border-radius:50%;color:#fff;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:5;}
-
+ 
 /* ── BUTTONS ── */
 .btn{width:100%;padding:15px;border:none;border-radius:var(--rs);font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;cursor:pointer;transition:all .2s;}
 .btn-p{background:var(--accent);color:var(--bg);}
@@ -101,17 +101,17 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
 .btn-i{background:rgba(59,130,246,.15);color:var(--info);}
 .btn-sm{width:auto;padding:8px 16px;font-size:13px;border-radius:8px;}
 .btn-xs{width:auto;padding:6px 12px;font-size:12px;border-radius:8px;}
-
+ 
 /* ── EXPORT ROW ── */
 .exp-row{display:flex;gap:8px;margin-bottom:16px;}
 .exp-row button{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;padding:10px;border:1.5px solid var(--border);border-radius:var(--rs);background:var(--card);color:var(--t2);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s;}
 .exp-row button:active{border-color:var(--accent);color:var(--accent);}
 .exp-row svg{width:15px;height:15px;}
-
+ 
 /* ── NOTIF BANNER ── */
 .nb{background:var(--accentS);border:1.5px solid rgba(245,158,11,.3);border-radius:var(--rs);padding:12px 16px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:10px;}
 .nb p{font-size:13px;color:var(--t2);flex:1;}
-
+ 
 /* ── SHIPMENT CARD ── */
 .sc{display:flex;gap:14px;align-items:flex-start;}
 .sthumb{width:70px;height:70px;border-radius:10px;object-fit:cover;flex-shrink:0;background:var(--input);}
@@ -119,13 +119,13 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
 .sinfo h3{font-size:15px;font-weight:600;margin-bottom:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .smeta{font-size:12px;color:var(--t3);display:flex;flex-wrap:wrap;gap:5px 12px;margin-top:6px;}
 .smeta span{display:flex;align-items:center;gap:4px;}
-
+ 
 /* ── BADGES ── */
 .badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.4px;}
 .bp{background:rgba(245,158,11,.15);color:var(--accent);}
 .br{background:rgba(16,185,129,.15);color:var(--ok);}
 .bo{background:rgba(239,68,68,.15);color:var(--err);}
-
+ 
 /* ── SUPPLIER ── */
 .sup-item{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--border);}
 .sup-item:last-child{border-bottom:none;}
@@ -135,23 +135,23 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
 .sup-acts button{width:34px;height:34px;border:none;border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;}
 .eb{background:var(--accentS);color:var(--accent);}
 .db{background:rgba(239,68,68,.12);color:var(--err);}
-
+ 
 /* ── STATS ── */
 .stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:20px;}
 .stat{background:var(--card);border:1px solid var(--border);border-radius:var(--rs);padding:14px;text-align:center;}
 .snum{font-family:'Space Mono',monospace;font-size:26px;font-weight:700;color:var(--accent);}
 .slbl{font-size:10px;color:var(--t3);text-transform:uppercase;letter-spacing:.5px;margin-top:2px;}
-
+ 
 /* ── CHIPS ── */
 .chips{display:flex;gap:8px;margin-bottom:16px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px;}
 .chip{padding:8px 16px;border-radius:20px;border:1.5px solid var(--border);background:none;color:var(--t2);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;white-space:nowrap;cursor:pointer;transition:all .2s;}
 .chip.on{background:var(--accent);color:var(--bg);border-color:var(--accent);}
-
+ 
 /* ── EMPTY ── */
 .empty{text-align:center;padding:50px 20px;color:var(--t3);}
 .empty svg{width:54px;height:54px;margin-bottom:16px;opacity:.35;}
 .empty p{font-size:14px;}
-
+ 
 /* ── MODAL ── */
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(4px);z-index:300;display:none;align-items:flex-end;justify-content:center;}
 .overlay.on{display:flex;}
@@ -159,49 +159,49 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
 @keyframes slideup{from{transform:translateY(100%)}to{transform:translateY(0)}}
 .handle{width:40px;height:4px;background:var(--t3);border-radius:2px;margin:0 auto 20px;}
 .modal h2{font-size:18px;margin-bottom:20px;}
-
+ 
 /* ── SEARCH ── */
 .srch{position:relative;margin-bottom:16px;}
 .srch input{width:100%;background:var(--input);border:1.5px solid var(--border);border-radius:var(--rs);padding:12px 16px 12px 42px;color:var(--t1);font-family:'DM Sans',sans-serif;font-size:15px;outline:none;}
 .srch input:focus{border-color:var(--accent);}
 .srch svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:17px;height:17px;color:var(--t3);}
-
+ 
 /* ── TOAST ── */
 .toast{position:fixed;top:calc(var(--st) + 10px);left:20px;right:20px;background:var(--ok);color:#fff;padding:13px 18px;border-radius:var(--rs);font-weight:600;font-size:14px;z-index:500;text-align:center;transform:translateY(-130%);transition:transform .3s ease;}
 .toast.on{transform:translateY(0);}
 .toast.e{background:var(--err);}
-
+ 
 /* ── DETAIL ── */
 .dpho{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r);margin-bottom:16px;}
 .drow{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border);}
 .drow:last-child{border-bottom:none;}
 .dlbl{color:var(--t3);font-size:13px;}
 .dval{font-weight:600;font-size:14px;text-align:right;}
-
+ 
 /* ── EDIT BANNER ── */
 .edit-banner{background:rgba(59,130,246,.12);border:1.5px solid rgba(59,130,246,.3);border-radius:var(--rs);padding:10px 16px;margin-bottom:18px;font-size:13px;color:var(--info);display:flex;align-items:center;gap:8px;}
-
+ 
 /* ── OFFLINE BANNER ── */
 .offline-bar{background:rgba(239,68,68,.12);border-bottom:1px solid rgba(239,68,68,.2);padding:8px 20px;font-size:12px;color:var(--err);text-align:center;display:none;}
 </style>
 </head>
 <body>
-
+ 
 <!-- OFFLINE -->
 <div class="offline-bar" id="offline-bar">&#9888; Fara internet — datele se vor sincroniza la reconectare</div>
-
+ 
 <!-- SETUP -->
 <div id="setup">
   <div class="setup-logo">&#9881; SubTracker</div>
   <p class="setup-sub">Sincronizare prin GitHub Gist &bull; gratuit</p>
-
+ 
   <!-- Mode picker -->
   <div class="setup-box" id="setup-pick" style="max-width:480px;width:100%">
     <h2 style="margin-bottom:16px">&#128241; Acest dispozitiv este...</h2>
     <button class="btn btn-p" onclick="showMode('new')" style="margin-bottom:10px">&#127381; Primul dispozitiv — configurez pentru prima oara</button>
     <button class="btn btn-s" onclick="showMode('join')">&#128279; Al doilea dispozitiv — am deja aplicatia pe alt dispozitiv</button>
   </div>
-
+ 
   <!-- NEW DEVICE -->
   <div class="setup-box hidden" id="setup-new" style="max-width:480px;width:100%">
     <h2>&#127381; Configurare initiala</h2>
@@ -220,7 +220,7 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
     <button class="btn btn-p" onclick="connectNew()" style="margin-bottom:10px">&#128279; Conecteaza si creeaza Gist</button>
     <button class="btn btn-s" onclick="showMode(null)">&#8592; Inapoi</button>
   </div>
-
+ 
   <!-- JOIN EXISTING -->
   <div class="setup-box hidden" id="setup-join" style="max-width:480px;width:100%">
     <h2>&#128279; Conectare la Gist existent</h2>
@@ -239,13 +239,13 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
     <button class="btn btn-s" onclick="showMode(null)">&#8592; Inapoi</button>
   </div>
 </div>
-
+ 
 <!-- LOADING -->
 <div id="loading" class="hidden">
   <div class="spin"></div>
   <p id="loading-msg">Se conecteaza la GitHub...</p>
 </div>
-
+ 
 <!-- HEADER -->
 <div class="hdr">
   <div>
@@ -257,7 +257,7 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
     <button class="cfg-btn" onclick="resetCfg()">Schimba cont</button>
   </div>
 </div>
-
+ 
 <!-- DASHBOARD -->
 <div class="page on" id="page-dashboard">
   <div class="stats">
@@ -265,12 +265,12 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
     <div class="stat"><div class="snum" id="st-pend">0</div><div class="slbl">In lucru</div></div>
     <div class="stat"><div class="snum" id="st-over">0</div><div class="slbl">Intarziate</div></div>
   </div>
-
+ 
   <div class="nb hidden" id="nb">
     <p>&#128276; Activati notificarile pentru termene scadente.</p>
     <button class="btn btn-p btn-xs" onclick="reqNotif()">Activeaza</button>
   </div>
-
+ 
   <div class="exp-row">
     <button onclick="exportExcel()">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="16" y2="16"/></svg>
@@ -285,27 +285,27 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
       Sync
     </button>
   </div>
-
+ 
   <div class="chips">
     <button class="chip on" data-f="all">Toate</button>
     <button class="chip" data-f="pending">In lucru</button>
     <button class="chip" data-f="overdue">Intarziate</button>
     <button class="chip" data-f="received">Primite</button>
   </div>
-
+ 
   <div class="srch">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
     <input type="text" id="srch" placeholder="Cauta produs sau furnizor...">
   </div>
-
+ 
   <div id="list"></div>
 </div>
-
+ 
 <!-- ADD / EDIT -->
 <div class="page" id="page-add">
   <h2 style="font-size:20px;margin-bottom:12px" id="add-title">Adauga Expediere</h2>
   <div class="edit-banner hidden" id="edit-banner">&#9999;&#65039; Editati o expediere existenta</div>
-
+ 
   <div class="fg">
     <label>Fotografie Produs</label>
     <div class="photo-wrap" id="photo-wrap" onclick="document.getElementById('photo-inp').click()">
@@ -333,7 +333,7 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
   <button class="btn btn-p" id="save-btn" onclick="saveShipment()" style="margin-bottom:10px">&#128190; Salveaza Expedierea</button>
   <button class="btn btn-s hidden" id="cancel-btn" onclick="cancelEdit()">Anuleaza editarea</button>
 </div>
-
+ 
 <!-- SUPPLIERS -->
 <div class="page" id="page-suppliers">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
@@ -342,7 +342,7 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
   </div>
   <div id="sup-list"></div>
 </div>
-
+ 
 <!-- TABS -->
 <nav class="tabs">
   <button class="on" onclick="goTab('dashboard',this)">
@@ -358,7 +358,7 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
     Furnizori
   </button>
 </nav>
-
+ 
 <!-- SUPPLIER MODAL -->
 <div class="overlay" id="sup-modal">
   <div class="modal">
@@ -374,7 +374,7 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
     <button class="btn btn-s" onclick="closeSupModal()">Anuleaza</button>
   </div>
 </div>
-
+ 
 <!-- SHIPMENT MODAL -->
 <div class="overlay" id="sh-modal">
   <div class="modal">
@@ -382,30 +382,30 @@ body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:v
     <div id="sh-detail"></div>
   </div>
 </div>
-
+ 
 <div class="toast" id="toast"></div>
-
+ 
 <script>
 // ── STATE ──
 var suppliers=[], shipments=[], filter='all', photo=null, editId=null;
 var GH_TOKEN='', GIST_ID='';
 var saveTimer=null, pollTimer=null;
 var lastGistUpdatedAt='';
-
+ 
 // ── HELPERS ──
 function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML;}
 function fmtDate(ds){if(!ds)return'-';var p=ds.split('-');return p[2]+'.'+p[1]+'.'+p[0];}
 function genId(){return Date.now().toString(36)+Math.random().toString(36).substr(2,5);}
 function today(){return new Date().toISOString().split('T')[0];}
 function tomorrow(){return new Date(Date.now()+86400000).toISOString().split('T')[0];}
-
+ 
 function toast(msg,err){
   var t=document.getElementById('toast');
   t.textContent=msg; t.className='toast'+(err?' e':'');
   requestAnimationFrame(function(){t.classList.add('on');});
   setTimeout(function(){t.classList.remove('on');},2800);
 }
-
+ 
 function setSyncUI(state,lbl){
   var dot=document.getElementById('dot'),sl=document.getElementById('sync-lbl');
   dot.className='dot '+(state==='ok'?'ok':state==='busy'?'busy':'err');
@@ -416,7 +416,7 @@ function setSyncTime(){
   var t=n.getHours().toString().padStart(2,'0')+':'+n.getMinutes().toString().padStart(2,'0')+':'+n.getSeconds().toString().padStart(2,'0');
   setSyncUI('ok','Sync '+t);
 }
-
+ 
 // ── GITHUB GIST API ──
 function ghFetch(method,path,body){
   // Append timestamp to GET requests to bust iOS Safari's aggressive fetch cache
@@ -429,22 +429,32 @@ function ghFetch(method,path,body){
     body:body?JSON.stringify(body):undefined
   });
 }
-
+ 
 async function loadFromGist(silent){
   if(!silent) setSyncUI('busy','Se incarca...');
   try{
     var r=await ghFetch('GET','/gists/'+GIST_ID);
     if(!r.ok) throw new Error('HTTP '+r.status);
     var data=await r.json();
-    // Check if Gist actually changed since last load — skip re-render if not
+    // Skip re-render if nothing changed
     var gistUpdated=data.updated_at||'';
     if(silent && gistUpdated && gistUpdated===lastGistUpdatedAt){
-      // No change — just update the clock quietly
-      setSyncTime();
-      return;
+      setSyncTime(); return;
     }
     lastGistUpdatedAt=gistUpdated;
-    var content=data.files['subtracker-data.json'].content;
+ 
+    // GitHub truncates files > ~1MB — must fetch raw_url in that case
+    var fileInfo=data.files['subtracker-data.json'];
+    var content;
+    if(fileInfo.truncated){
+      // Fetch full content from raw_url (no auth needed, but add cache-bust)
+      var rawR=await fetch(fileInfo.raw_url+'?_='+Date.now(),{cache:'no-store'});
+      if(!rawR.ok) throw new Error('Nu s-a putut citi fisierul complet (raw_url).');
+      content=await rawR.text();
+    } else {
+      content=fileInfo.content;
+    }
+ 
     var parsed=JSON.parse(content);
     suppliers=parsed.suppliers||[];
     shipments=parsed.shipments||[];
@@ -456,13 +466,13 @@ async function loadFromGist(silent){
     if(!silent) toast('Eroare la incarcare: '+e.message,true);
   }
 }
-
+ 
 function schedSave(){
   // debounce — save 1.5s after last change
   if(saveTimer) clearTimeout(saveTimer);
   saveTimer=setTimeout(pushToGist,1500);
 }
-
+ 
 async function pushToGist(){
   if(!GIST_ID||!GH_TOKEN) return;
   setSyncUI('busy','Se salveaza...');
@@ -478,12 +488,12 @@ async function pushToGist(){
     toast('Eroare la salvare!',true);
   }
 }
-
+ 
 async function syncNow(){
   toast('Se sincronizeaza...');
   await loadFromGist(false);
 }
-
+ 
 // ── SETUP ──
 function showMode(mode){
   document.getElementById('setup-pick').classList.add('hidden');
@@ -493,7 +503,7 @@ function showMode(mode){
   else if(mode==='new') document.getElementById('setup-new').classList.remove('hidden');
   else if(mode==='join') document.getElementById('setup-join').classList.remove('hidden');
 }
-
+ 
 async function connectNew(){
   var token=document.getElementById('gh-token-new').value.trim();
   var errEl=document.getElementById('setup-err-new');
@@ -528,7 +538,7 @@ async function connectNew(){
     errEl.classList.remove('hidden');
   }
 }
-
+ 
 async function connectJoin(){
   var token=document.getElementById('gh-token-join').value.trim();
   var gistId=document.getElementById('gh-gist-join').value.trim();
@@ -566,7 +576,7 @@ async function connectJoin(){
     errEl.classList.remove('hidden');
   }
 }
-
+ 
 function resetCfg(){
   var choice=confirm('Apasa OK pentru a vedea Gist ID-ul (pentru conectarea unui al doilea dispozitiv).\n\nApasa Anuleaza pentru a deconecta acest dispozitiv.');
   if(choice){
@@ -582,7 +592,7 @@ function resetCfg(){
   showMode(null);
   document.getElementById('setup').classList.remove('hidden');
 }
-
+ 
 function startApp(){
   document.getElementById('setup').classList.add('hidden');
   document.getElementById('loading').classList.add('hidden');
@@ -594,7 +604,7 @@ function startApp(){
     if(GH_TOKEN&&GIST_ID&&!document.hidden) loadFromGist(true);
   },30000);
 }
-
+ 
 // ── INIT ──
 window.addEventListener('DOMContentLoaded',function(){
   var t=localStorage.getItem('st_gh_token'), g=localStorage.getItem('st_gist_id');
@@ -610,7 +620,7 @@ window.addEventListener('DOMContentLoaded',function(){
   // sync when tab/app becomes visible again — non-silent so data always refreshes
   document.addEventListener('visibilitychange',function(){if(!document.hidden&&GH_TOKEN&&GIST_ID)loadFromGist(false);});
 });
-
+ 
 // ── TABS ──
 function goTab(t,btn){
   document.querySelectorAll('.page').forEach(function(p){p.classList.remove('on');});
@@ -622,7 +632,7 @@ function goTab(t,btn){
     document.getElementById('ship-d').value=today();
   }
 }
-
+ 
 // ── PHOTO ──
 function handlePhoto(inp){
   var f=inp.files[0]; if(!f) return;
@@ -631,10 +641,11 @@ function handlePhoto(inp){
     var img=new Image();
     img.onload=function(){
       var c=document.createElement('canvas');
-      var sc=Math.min(1,800/img.width);
+      // Max 400px wide — keeps base64 under ~30KB per photo
+      var sc=Math.min(1,400/img.width);
       c.width=img.width*sc; c.height=img.height*sc;
       c.getContext('2d').drawImage(img,0,0,c.width,c.height);
-      photo=c.toDataURL('image/jpeg',.7);
+      photo=c.toDataURL('image/jpeg',.5);
       updatePhotoUI();
     };
     img.src=e.target.result;
@@ -652,7 +663,7 @@ function updatePhotoUI(){
     w.appendChild(b);
   }
 }
-
+ 
 // ── SUPPLIERS ──
 function openSupModal(id){
   if(id){
@@ -672,7 +683,7 @@ function openSupModal(id){
   document.getElementById('sup-modal').classList.add('on');
 }
 function closeSupModal(){document.getElementById('sup-modal').classList.remove('on');}
-
+ 
 function saveSupplier(){
   var name=document.getElementById('sname').value.trim();
   if(!name){toast('Introduceti denumirea!',true);return;}
@@ -682,13 +693,13 @@ function saveSupplier(){
   else{suppliers.push(Object.assign({id:genId()},d));toast('Furnizor adaugat!');}
   closeSupModal(); renderAll(); schedSave();
 }
-
+ 
 function deleteSup(id){
   if(!confirm('Stergeti acest furnizor?')) return;
   suppliers=suppliers.filter(function(s){return s.id!==id;});
   renderAll(); schedSave(); toast('Furnizor sters!');
 }
-
+ 
 function renderSuppliers(){
   var c=document.getElementById('sup-list');
   if(!suppliers.length){c.innerHTML='<div class="empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/></svg><p>Nu aveti furnizori.<br>Apasati + Adauga.</p></div>';return;}
@@ -700,20 +711,20 @@ function renderSuppliers(){
       +'</div></div>';
   }).join('')+'</div>';
 }
-
+ 
 function populateSupSel(){
   var sel=document.getElementById('sup-sel'),val=sel.value;
   sel.innerHTML='<option value="">-- Selecteaza --</option>'+suppliers.map(function(s){return'<option value="'+s.id+'">'+esc(s.name)+'</option>';}).join('');
   if(val) sel.value=val;
 }
-
+ 
 // ── SHIPMENTS ──
 function getStatus(s){
   if(s.status==='received') return 'received';
   if(s.returnDate<today()) return 'overdue';
   return 'pending';
 }
-
+ 
 function saveShipment(){
   var pn=document.getElementById('pname').value.trim();
   var sid=document.getElementById('sup-sel').value;
@@ -726,7 +737,7 @@ function saveShipment(){
   if(!sid){toast('Selectati un furnizor!',true);return;}
   if(!qty||qty<=0){toast('Introduceti o cantitate valida!',true);return;}
   if(!rd){toast('Introduceti termenul de primire!',true);return;}
-
+ 
   if(editId){
     var idx=shipments.findIndex(function(s){return s.id===editId;});
     var ex=shipments[idx];
@@ -739,7 +750,7 @@ function saveShipment(){
   resetForm(); renderAll(); schedSave();
   goTab('dashboard',document.querySelector('.tabs button'));
 }
-
+ 
 function resetForm(){
   editId=null; photo=null;
   ['pname','qty','notes'].forEach(function(id){document.getElementById(id).value='';});
@@ -754,9 +765,9 @@ function resetForm(){
   document.getElementById('edit-banner').classList.add('hidden');
   document.getElementById('cancel-btn').classList.add('hidden');
 }
-
+ 
 function cancelEdit(){resetForm();goTab('dashboard',document.querySelector('.tabs button'));}
-
+ 
 function startEdit(id){
   var s=shipments.find(function(x){return x.id===id;});
   if(!s) return;
@@ -778,7 +789,7 @@ function startEdit(id){
   goTab('add',document.querySelectorAll('.tabs button')[1]);
   window.scrollTo(0,0);
 }
-
+ 
 function toggleReceived(id){
   var s=shipments.find(function(x){return x.id===id;});
   s.status=s.status==='received'?'pending':'received';
@@ -787,13 +798,13 @@ function toggleReceived(id){
   renderAll(); closeShModal(); schedSave();
   toast(s.status==='received'?'Marcat ca primit!':'Marcat ca in lucru!');
 }
-
+ 
 function deleteShipment(id){
   if(!confirm('Stergeti aceasta expediere?')) return;
   shipments=shipments.filter(function(s){return s.id!==id;});
   renderAll(); closeShModal(); schedSave(); toast('Expediere steara!');
 }
-
+ 
 function renderDashboard(){
   var srch=document.getElementById('srch').value.toLowerCase();
   var p=shipments.filter(function(s){return getStatus(s)==='pending';}).length;
@@ -801,14 +812,14 @@ function renderDashboard(){
   document.getElementById('st-total').textContent=shipments.length;
   document.getElementById('st-pend').textContent=p;
   document.getElementById('st-over').textContent=o;
-
+ 
   var list=shipments;
   if(filter!=='all') list=list.filter(function(s){return getStatus(s)===filter;});
   if(srch) list=list.filter(function(s){
     var sup=suppliers.find(function(x){return x.id===s.supplierId;});
     return s.productName.toLowerCase().includes(srch)||(sup&&sup.name.toLowerCase().includes(srch));
   });
-
+ 
   var c=document.getElementById('list');
   if(!list.length){c.innerHTML='<div class="empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 00-8 0v2"/></svg><p>'+(shipments.length?'Niciun rezultat.':'Nicio expediere.<br>Apasati + Adauga!')+'</p></div>';return;}
   c.innerHTML=list.map(function(s){
@@ -824,7 +835,7 @@ function renderDashboard(){
       +'</div></div></div>';
   }).join('');
 }
-
+ 
 function openDetail(id){
   var s=shipments.find(function(x){return x.id===id;});if(!s) return;
   var sup=suppliers.find(function(x){return x.id===s.supplierId;});
@@ -851,9 +862,9 @@ function openDetail(id){
   document.getElementById('sh-modal').classList.add('on');
 }
 function closeShModal(){document.getElementById('sh-modal').classList.remove('on');}
-
+ 
 function renderAll(){renderDashboard();renderSuppliers();}
-
+ 
 // ── EXPORT ──
 function exportExcel(){
   if(!shipments.length){toast('Nu exista expedieri!',true);return;}
@@ -870,7 +881,7 @@ function exportExcel(){
   XLSX.writeFile(wb,'SubTracker_'+today()+'.xlsx');
   toast('Excel exportat!');
 }
-
+ 
 function exportPDF(){
   if(!shipments.length){toast('Nu exista expedieri!',true);return;}
   var doc=new window.jspdf.jsPDF({orientation:'landscape',unit:'mm',format:'a4'});
@@ -891,10 +902,10 @@ function exportPDF(){
   doc.save('SubTracker_'+today()+'.pdf');
   toast('PDF exportat!');
 }
-
+ 
 // ── NOTIFICATIONS ──
 var notifSupported = (typeof Notification !== 'undefined');
-
+ 
 function initNotifBanner(){
   var nb=document.getElementById('nb');
   if(!notifSupported){nb.classList.add('hidden');return;}
@@ -920,7 +931,7 @@ function checkNotif(){
   if(dt.length) n('SubTracker: scadente azi',dt.map(function(s){return s.productName;}).join(', '),1200);
   if(dm.length) n('SubTracker: scadente maine',dm.map(function(s){return s.productName;}).join(', '),2400);
 }
-
+ 
 // ── EVENTS ──
 document.querySelectorAll('.chip').forEach(function(c){
   c.addEventListener('click',function(){
